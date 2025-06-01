@@ -2,8 +2,11 @@
 Medical-Chatbot-GradProject
 ## steps to run the project
 
-'''bash
+```bash
 conda create -n mchatbot python=3.10.12 -y
 
-'''bash
+```bash
 conda activate mchatbot
+
+```bash
+pip install mchatbot
