@@ -1,5 +1,9 @@
 ctransformers==0.2.5
 sentence-transformers==2.2.2
-pinecone-client==3.0.0
+faiss-cpu==1.7.4
 langchain==0.1.15
 flask
+pypdf
+# Optional but recommended:
+transformers>=4.30.0  # works well with sentence-transformers 2.x
+huggingface_hub==0.16.4  # compatible with transformers and sentence-transformers
