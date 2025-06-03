@@ -7,3 +7,4 @@ pypdf
 # Optional but recommended:
 transformers>=4.30.0  # works well with sentence-transformers 2.x
 huggingface_hub==0.16.4  # compatible with transformers and sentence-transformers
+-e .
