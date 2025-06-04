@@ -37,10 +37,11 @@ def load_json(json_path):
 
 # Step 2: Initialize the splitter
 def text_split(all_docs):
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=500,chunk_overlap=50)
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
     text_chunks = text_splitter.split_documents(all_docs)
-    
+    print(f"📚 Split into {len(text_chunks)} chunks from {len(all_docs)} docs")
     return text_chunks
+
 
 
 
@@ -83,16 +84,21 @@ def clean_extracted_data(docs):
     cleaned_docs = []
     seen_hashes = set()
 
-    for doc in docs:
+    print(f"🧹 Cleaning {len(docs)} documents...")
+    
+    for i, doc in enumerate(docs):
         cleaned_text = clean_pdf_text(doc.page_content)
         if cleaned_text:
-            # Remove duplicates
             content_hash = md5(cleaned_text.encode("utf-8")).hexdigest()
             if content_hash not in seen_hashes:
                 seen_hashes.add(content_hash)
                 doc.page_content = cleaned_text
                 cleaned_docs.append(doc)
+        
+        if i % 100 == 0:
+            print(f"🪄 Cleaned {i}/{len(docs)} docs...")
 
+    print(f"✅ Finished cleaning. Kept {len(cleaned_docs)} unique docs.")
     return cleaned_docs
 
 

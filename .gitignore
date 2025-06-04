@@ -194,3 +194,5 @@ cython_debug/
 .cursorindexingignore
 
 model/llama-2-7b-chat.ggmlv3.q4_0.bin
+faiss_index/index.faiss
+faiss_index/index.pkl
