@@ -8,7 +8,7 @@ Use the provided context to accurately answer the user's health-related question
 - If you don't know the answer, say so clearly and suggest the user consult a healthcare professional.
 
 Context:
-{input_documents}
+{context}
 
 User question:
 {question}

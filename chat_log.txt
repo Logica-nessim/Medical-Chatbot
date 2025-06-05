@@ -61,3 +61,28 @@ Bot:  I don't know.
 User: okay thank you
 Bot:  Based on the information provided, some possible causes of fever, cough, and stomach pain could be Anaplasmosis or other bacterial infections.
 
+User: how to treat acne?
+Bot:  There are several herbs that can be used to treat acne, including burdock root, red clover, milk thistle, cnidium seed, and honeysuckle flower. These herbs can be supplemented with essential fatty acids, vitamin B complex, zinc, vitamin A, and chromium for optimal effectiveness. It is also recommended to use noncomedogenic makeup and moisturizers, shampoo often, eat a well-balanced diet avoiding foods that trigger flare-ups, limit sun exposure on dry pimples, and reduce stress. A holistic physician or nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr nutr
+
+User: how to treat acne?
+Bot: To effectively treat acne, it's important to follow a comprehensive approach that includes both topical and internal remedies. Noncomedogenic makeup and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist,mois and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist,
+up and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist and moist, moist and moist and moist and moist
+
+User: what is Endometrial ?
+Bot: Endometriosis is a chronic and often painful condition in which tissue similar to the lining of the uterus grows outside the uterus, causing inflammation and scarring. It can affect various parts of the body, including the ovaries, fallopian tubes, and pelvic floor muscles. Endometriosis can cause heavy menstrual bleeding, painful periods, and infertility. If you suspect you may have endometriosis, it's important to consult a healthcare professional for proper diagnosis and treatment.
+
+User: what its symptoms?
+Bot: Endometriosis is a condition in which tissue similar to the lining of the uterus grows outside the uterus, causing pain and other symptoms. Common symptoms of endometriosis include pelvic pain, heavy menstrual bleeding, and difficulty getting pregnant. If you suspect you may have endometriosis, it's important to consult a healthcare professional for proper diagnosis and treatment.
+
+User: what should i do if i found out that i have it?
+Bot: You have several treatment options for endometriosis, including hormonal medications, surgery, and lifestyle changes. Hormonal medications can help reduce the growth of endometrial tissue, while surgery can remove excess tissue or scar tissue. Lifestyle changes such as losing weight, quitting smoking, and exercising regularly can also help manage symptoms. It's important to consult a healthcare professional for proper diagnosis and treatment.
+
+User: what is Uterine Sarcoma?
+Bot: Uterine sarcoma is a rare type of cancer that affects the muscles of the uterus or other tissues that support it. It can cause symptoms such as abnormal bleeding, pelvic pain, and weight loss. Treatment options may include surgery, radiation therapy, and chemotherapy. If you have any concerns or questions about uterine sarcoma, please consult a healthcare professional.
+
+User: who is in risk to have it?
+Bot: Uterine sarcoma is a rare type of cancer that affects the uterus. It can occur in women of any age but is more common after menopause. Risk factors include a family history of uterine sarcoma, previous radiation therapy to the pelvic area, and certain genetic conditions. If you have any concerns or symptoms, please consult a healthcare professional for proper evaluation and treatment.
+
+User: how to prevent it from happening
+Bot: Of course! Uterine sarcoma is a rare and complex cancer that can be challenging to treat effectively. While there are various treatment options available, unfortunately, there is no known way to prevent uterine sarcoma from developing in the first place. It's essential for women to maintain regular gynecological check-ups and screenings to detect any abnormalities early on, when they may be more easily treated. If you have any concerns or questions about uterine sarcoma or its treatment, please don't hesitate to ask!
+
