@@ -1,14 +1,13 @@
-from langchain.document_loaders import PyPDFLoader, DirectoryLoader
+from langchain_community.document_loaders import PyPDFLoader, DirectoryLoader
 import json
 from langchain.schema import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import os
 import re
-from langchain.document_loaders import PyPDFLoader
 from hashlib import md5
-from langchain.embeddings import HuggingFaceBgeEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 
-#extract data from PDF
+#extract data from PDFz
 def load_pdf(data):
     loader =  DirectoryLoader(data,
                     glob="*.pdf",
@@ -41,8 +40,6 @@ def text_split(all_docs):
     text_chunks = text_splitter.split_documents(all_docs)
     print(f"📚 Split into {len(text_chunks)} chunks from {len(all_docs)} docs")
     return text_chunks
-
-
 
 
 def clean_pdf_text(text):
@@ -104,5 +101,5 @@ def clean_extracted_data(docs):
 
 #download embedding model
 def download_hugging_face_embeddings():
-    embeddings = HuggingFaceBgeEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
     return embeddings

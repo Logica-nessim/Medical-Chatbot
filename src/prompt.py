@@ -8,10 +8,10 @@ Use the provided context to accurately answer the user's health-related question
 - If you don't know the answer, say so clearly and suggest the user consult a healthcare professional.
 
 Context:
-{context}
+{input_documents}
 
 User question:
 {question}
 
 Your helpful answer (limit to 2–4 concise, fact-based sentences):
-"""
+"""  

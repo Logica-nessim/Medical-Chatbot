@@ -1,9 +1,12 @@
+langchain>=0.2.0 #0.3.25
+langchain-community>=0.2.0 
+langchain-huggingface>=0.0.9
+sentence-transformers>=2.2.2
+huggingface_hub>=0.20.0
 ctransformers==0.2.5
-sentence-transformers==2.2.2
 faiss-cpu==1.7.4
-langchain==0.1.15
+numpy==1.24.4
 flask
 pypdf
-transformers>=4.30.0 
-huggingface_hub==0.16.4 
+transformers>=4.30.0
 -e .
