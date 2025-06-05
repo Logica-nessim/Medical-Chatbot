@@ -16,7 +16,7 @@ print(f"✅ Combined {len(all_docs)} documents")
 text_chunks = text_split(all_docs)
 print("length of my chunks:", len(text_chunks))
 
-# 3. Load embeddings (HuggingFace)
+# # 3. Load embeddings (HuggingFace)
 embeddings = download_hugging_face_embeddings()
 print("✅ Embeddings model loaded")
 
@@ -35,7 +35,7 @@ print(f"✅ Number of documents in FAISS index: {len(docsearch.index_to_docstore
 
 # Do a test query
 query = "What is acute lymphoblastic leukemia?"
-results = docsearch.similarity_search(query, k=1)
+results = docsearch.similarity_search(query, k=3)
 
 print(f"🔍 Search test: Found {len(results)} result(s) for query.")
 print("🧠 Top result preview:")

@@ -19,10 +19,15 @@ print("✅ FAISS index loaded from disk.")
 PROMPT=PromptTemplate(template=prompt_template, input_variables=["context", "question"])
 chain_type_kwargs={"prompt": PROMPT}
 
-llm=CTransformers(model="model/llama-2-7b-chat.ggmlv3.q4_0.bin",
-                model_type="llama",
-                config={'max_new_tokens':512,
-                        'temperature':0.5})
+llm = CTransformers(
+    model="model/llama-2-7b-chat.ggmlv3.q4_0.bin",
+    model_type="llama",
+    config={
+        'max_new_tokens': 400,
+        'temperature': 0.5,
+        'stop': ["User:", "Assistant:", "\n\n"]
+    }
+)
 
 qa=RetrievalQA.from_chain_type(
     llm=llm, 
@@ -38,11 +43,20 @@ def index():
 @app.route("/get", methods=["GET", "POST"])
 def chat():
     msg = request.form["msg"]
-    input = msg
+    input = msg.strip()
     print(input)
-    result=qa({"query": input})
-    print("Response : ", result["result"])
-    return str(result["result"])
+
+    greetings = ["hello", "hi", "hey", "good morning", "good afternoon", "good evening"]
+    if input.lower() in greetings:
+        return "Hello! 😊 How can I assist you with a medical or health-related question today?"
+
+    try:
+        result = qa.invoke({"query": input})
+        print("Response : ", result["result"])
+        return str(result["result"])
+    except Exception as e:
+        print("❌ Error: ", e)
+        return "Sorry, something went wrong while processing your request. Please try again."
 
 if __name__ =='__main__':
     app.run(debug= True)
