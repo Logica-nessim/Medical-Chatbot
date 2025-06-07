@@ -3,7 +3,6 @@ from src.helper import download_hugging_face_embeddings
 from langchain_community.vectorstores import FAISS
 from langchain.prompts import PromptTemplate
 from langchain_community.llms import CTransformers
-from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationalRetrievalChain
 from src.prompt import *
 import time

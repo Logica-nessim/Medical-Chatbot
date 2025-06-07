@@ -196,3 +196,8 @@ cython_debug/
 model/llama-2-7b-chat.ggmlv3.q4_0.bin
 faiss_index/index.faiss
 faiss_index/index.pkl
+Medical_Chatbot.egg-info
+research
+template.py
+show_structure.py
+setup.py
