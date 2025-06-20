@@ -35,8 +35,9 @@ def load_model_if_needed():
             model="model/llama-2-7b-chat.ggmlv3.q4_0.bin",
             model_type="llama",
             config={
-                'max_new_tokens': 200,
-                'temperature': 0.5,
+                'max_new_tokens': 150,
+                'temperature': 0.3,
+                'repetition_penalty': 1.5,
                 'stop': ["User:", "Assistant:", "\n\n"]
             }
         )
