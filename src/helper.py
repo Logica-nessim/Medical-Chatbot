@@ -6,6 +6,7 @@ import os
 import re
 from hashlib import md5
 from langchain_huggingface import HuggingFaceEmbeddings
+import pandas as pd
 
 #extract data from PDFz
 def load_pdf(data):
@@ -34,9 +35,31 @@ def load_json(json_path):
     
     return documents
 
+#extract data from csv
+
+def load_csv(csv_path):
+    df = pd.read_csv(csv_path)
+
+    documents = []
+
+    for i, row in df.iterrows():
+        disease = str(row.get("diseases", "")).strip()
+        
+        # Collect symptoms where the value is 1
+        symptoms = [symptom for symptom in df.columns[1:] if row[symptom] == 1]
+
+        if disease and symptoms:
+            symptom_list = ", ".join(symptoms)
+            content = f"Disease: {disease}\nSymptoms: {symptom_list}"
+            documents.append(Document(page_content=content))
+
+    print(f"🦠 Loaded {len(documents)} disease-symptom entries from CSV")
+    return documents
+
+
 # Step 2: Initialize the splitter
 def text_split(all_docs):
-    text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=100)
     text_chunks = text_splitter.split_documents(all_docs)
     print(f"📚 Split into {len(text_chunks)} chunks from {len(all_docs)} docs")
     return text_chunks

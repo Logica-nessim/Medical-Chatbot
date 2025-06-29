@@ -1,12 +1,15 @@
-langchain>=0.2.0 #0.3.25
-langchain-community>=0.2.0 
+langchain>=0.2.0            # Core LangChain
+langchain-community>=0.2.0  # Community loaders & tools
+langchain-openai>=0.1.0     # ✅ NEW: GPT-4o, ChatOpenAI
 langchain-huggingface>=0.0.9
 sentence-transformers>=2.2.2
 huggingface_hub>=0.20.0
-ctransformers==0.2.5
+ctransformers==0.2.5         # For running local LLMs
 faiss-cpu==1.7.4
 numpy==1.24.4
 flask
 pypdf
 transformers>=4.30.0
+openai>=1.0.0                # ✅ Required for GPT-4o
+python-dotenv                # ✅ Loads .env
 -e .
