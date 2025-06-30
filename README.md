@@ -1,7 +1,6 @@
 # Medical-Chatbot
 Medical-Chatbot-GradProject
 ## steps to run the project for the first time
-# law anaconda use this
 ```bash
 conda create -n mchatbot python=3.10.12 -y
 
