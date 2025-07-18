@@ -11,7 +11,7 @@ conda activate mchatbot
 ```bash
 pip install -r requirements.txt
 
-# hat3maly run le dol fel a5er store_index.py mara wa7da bas 
+#run store_index.py to create the FAISS DB
 ```bash
 python store_index.py
 
